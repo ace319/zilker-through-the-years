@@ -1,0 +1,41 @@
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 76% 22%,#224d46 0 9%,transparent 30%),var(--ink)}
+.hero::before,.hero::after{position:absolute;width:230px;height:230px;border:42px solid var(--orange);border-radius:50%;content:"";opacity:.18}
+.hero::before{top:-120px;left:38%}.hero::after{right:-100px;bottom:-110px;border-color:var(--pink)}
+.hero-copy,.hero-poster{position:relative;z-index:1;animation:hero-rise .85s both cubic-bezier(.2,.8,.2,1)}
+.hero-poster{animation-delay:.16s}
+.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px}
+.button-primary{color:var(--cream);background:#9e2f29;box-shadow:6px 6px var(--yellow)}
+.button-secondary{color:var(--cream);background:transparent;box-shadow:none;border:1px solid #fff8e899}
+.button:focus-visible,.button:hover{outline:3px solid var(--yellow);outline-offset:4px}
+@keyframes hero-rise{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+
+.history-timeline{position:relative;max-width:1050px;margin:78px auto 0;padding-left:92px}
+.history-timeline::before{position:absolute;top:10px;bottom:15px;left:37px;width:3px;background:var(--orange);content:""}
+.history-timeline article{position:relative;display:grid;padding:0 0 65px;grid-template-columns:150px 1fr;gap:38px}
+.history-timeline article::before{position:absolute;top:9px;left:-64px;width:17px;height:17px;border:5px solid var(--cream);border-radius:50%;background:var(--orange);box-shadow:0 0 0 2px var(--orange);content:""}
+.history-timeline time{color:var(--red);font:400 clamp(2.2rem,4vw,4rem)/1 var(--display)}
+.history-timeline span{color:var(--red);font:.6rem var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.history-timeline h3{margin:9px 0 12px;font:400 clamp(1.8rem,3vw,3rem)/1 var(--display)}
+.history-timeline p{max-width:650px;margin:0;font-size:1rem}
+.history-timeline .history-now{margin-left:-22px;padding:30px 32px;color:var(--cream);background:var(--red);box-shadow:10px 10px var(--yellow)}
+.history-timeline .history-now::before{top:39px;left:-42px;background:var(--yellow);box-shadow:0 0 0 2px var(--yellow)}
+.history-timeline .history-now time,.history-timeline .history-now span{color:var(--yellow)}
+
+.poster-card img{object-fit:contain!important;background:var(--cream)}
+.map{grid-template-columns:.48fr 1.52fr}.map-full-link{display:inline-block;margin-top:14px;padding:0!important;background:none!important;box-shadow:none!important;font:.62rem var(--mono);text-transform:uppercase}
+.map-interactive{position:relative;padding:12px;background:var(--cream);box-shadow:10px 12px var(--orange)}
+.map-interactive>img{width:100%;height:auto}
+.map-hotspots{position:absolute;inset:12px}
+.map-hotspot{position:absolute;width:30px;height:30px;padding:0;border:3px solid var(--cream);border-radius:50%;color:var(--cream);background:var(--red);box-shadow:0 2px 7px #0008;cursor:pointer;transform:translate(-50%,-50%)}
+.map-hotspot::after{font:700 .65rem var(--sans);content:"♪"}
+.map-hotspot:is(:hover,:focus-visible,.active){z-index:3;background:var(--ink);outline:3px solid var(--yellow);transform:translate(-50%,-50%) scale(1.22)}
+.map-preview{position:absolute;right:26px;bottom:24px;width:min(230px,28%);margin:0;padding:7px;background:var(--cream);box-shadow:7px 7px var(--pink);pointer-events:none}
+.map-preview img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.map-preview figcaption{padding:6px 2px 1px;border:0;font-size:.52rem}
+.photo-grid img{height:auto;aspect-ratio:16/10;object-fit:cover}
+.photo-grid figure:nth-child(3) img,.photo-grid figure:nth-child(6) img{object-position:center 35%}
+.numbers dl div{grid-template-columns:minmax(210px,auto) 1fr}
+
+@media(max-width:850px){.map{grid-template-columns:1fr}.history-timeline{margin-top:55px;padding-left:70px}.history-timeline article{grid-template-columns:115px 1fr}.history-timeline::before{left:25px}.history-timeline article::before{left:-53px}}
+@media(max-width:620px){.hero-actions{align-items:stretch;flex-direction:column}.button{text-align:center}.history-timeline{padding-left:38px}.history-timeline::before{left:8px}.history-timeline article{padding-bottom:50px;grid-template-columns:1fr;gap:10px}.history-timeline article::before{left:-38px}.history-timeline .history-now{margin-left:-10px;padding:24px}.history-timeline .history-now::before{left:-27px}.map-preview{right:18px;bottom:17px;width:38%}.map-hotspot{width:25px;height:25px}.numbers dl div{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.hero-copy,.hero-poster{animation:none}.poster-card{transition:none}}
