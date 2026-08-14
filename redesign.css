@@ -4,11 +4,6 @@
 .hero-copy,.hero-poster{position:relative;z-index:1;animation:hero-rise .85s both cubic-bezier(.2,.8,.2,1)}
 .hero-poster{animation-delay:.16s}
 .hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px}
-.hero-total{display:flex;width:max-content;max-width:100%;margin-top:42px;align-items:center;gap:17px;color:var(--cream);text-decoration:none}
-.hero-total strong{color:var(--yellow);font:400 clamp(2.3rem,4vw,4rem)/.85 var(--display)}
-.hero-total span{padding-left:17px;border-left:1px solid #fff8e855;font:.58rem/1.45 var(--mono);letter-spacing:.06em;text-transform:uppercase}
-.hero-total-note{max-width:520px;margin:12px 0 0;color:#91aaa1;font:.55rem/1.5 var(--mono)}
-.hero-total:hover strong{color:var(--orange)}
 .button-primary{color:var(--cream);background:#9e2f29;box-shadow:6px 6px var(--yellow)}
 .button-secondary{color:var(--cream);background:transparent;box-shadow:none;border:1px solid #fff8e899}
 .button:focus-visible,.button:hover{outline:3px solid var(--yellow);outline-offset:4px}
