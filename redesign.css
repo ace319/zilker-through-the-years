@@ -36,6 +36,15 @@
 .schedule-viewer a,.schedule-viewer img{display:block;width:100%}
 .schedule-viewer img{height:auto}
 #schedule-w1:checked~#schedule-fri:checked~.schedule-layout .schedule-w1-fri,#schedule-w1:checked~#schedule-sat:checked~.schedule-layout .schedule-w1-sat,#schedule-w1:checked~#schedule-sun:checked~.schedule-layout .schedule-w1-sun,#schedule-w2:checked~#schedule-fri:checked~.schedule-layout .schedule-w2-fri,#schedule-w2:checked~#schedule-sat:checked~.schedule-layout .schedule-w2-sat,#schedule-w2:checked~#schedule-sun:checked~.schedule-layout .schedule-w2-sun{display:block}
+.nights{display:grid;padding:95px 6vw;grid-template-columns:.55fr 1.45fr;gap:7vw;color:var(--cream);background:var(--ink)}
+.nights-intro{align-self:start}.nights h2{margin:20px 0 25px;font-size:clamp(3.5rem,6vw,6.5rem)}.nights-intro>p:not(.eyebrow){max-width:420px;color:#b7c7c0}
+.night-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.night-grid article{display:flex;min-height:210px;padding:24px;flex-direction:column;border:1px solid #ffffff35;background:#ffffff0a}
+.night-grid time{color:var(--orange);font:.6rem var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.night-grid h3{margin:18px 0 5px;color:var(--yellow);font:400 clamp(1.7rem,3vw,2.7rem)/.95 var(--display)}
+.night-grid p{margin:0;color:#b7c7c0;font-size:.82rem}
+.night-grid footer{display:flex;margin-top:auto;padding:18px 0 0;justify-content:space-between;gap:15px;color:var(--cream);background:none;font:.55rem var(--mono);text-transform:uppercase}
+.nights-note{grid-column:2;margin:10px 0 0;color:#91aaa1;font:.55rem var(--mono)}
 .map{grid-template-columns:.48fr 1.52fr}.map-full-link{display:inline-block;margin-top:14px;padding:0!important;background:none!important;box-shadow:none!important;font:.62rem var(--mono);text-transform:uppercase}
 .map-interactive{position:relative;padding:12px;background:var(--cream);box-shadow:10px 12px var(--orange)}
 .map-interactive>img{width:100%;height:auto}
@@ -50,6 +59,6 @@
 .photo-grid figure:nth-child(3) img,.photo-grid figure:nth-child(6) img{object-position:center 35%}
 .numbers dl div{grid-template-columns:minmax(210px,auto) 1fr}
 
-@media(max-width:850px){.map,.schedule-layout{grid-template-columns:1fr}.schedule-controls{position:static}.history-timeline{margin-top:55px;padding-left:70px}.history-timeline article{grid-template-columns:115px 1fr}.history-timeline::before{left:25px}.history-timeline article::before{left:-53px}}
-@media(max-width:620px){.hero-actions{align-items:stretch;flex-direction:column}.button{text-align:center}.schedule{padding:70px 24px}.weekend-tabs{grid-template-columns:1fr}.history-timeline{padding-left:38px}.history-timeline::before{left:8px}.history-timeline article{padding-bottom:50px;grid-template-columns:1fr;gap:10px}.history-timeline article::before{left:-38px}.history-timeline .history-now{margin-left:-10px;padding:24px}.history-timeline .history-now::before{left:-27px}.map-preview{right:18px;bottom:17px;width:38%}.map-hotspot{width:25px;height:25px}.numbers dl div{grid-template-columns:1fr}}
+@media(max-width:850px){.map,.schedule-layout,.nights{grid-template-columns:1fr}.schedule-controls{position:static}.nights-note{grid-column:1}.history-timeline{margin-top:55px;padding-left:70px}.history-timeline article{grid-template-columns:115px 1fr}.history-timeline::before{left:25px}.history-timeline article::before{left:-53px}}
+@media(max-width:620px){.hero-actions{align-items:stretch;flex-direction:column}.button{text-align:center}.schedule,.nights{padding:70px 24px}.weekend-tabs,.night-grid{grid-template-columns:1fr}.history-timeline{padding-left:38px}.history-timeline::before{left:8px}.history-timeline article{padding-bottom:50px;grid-template-columns:1fr;gap:10px}.history-timeline article::before{left:-38px}.history-timeline .history-now{margin-left:-10px;padding:24px}.history-timeline .history-now::before{left:-27px}.map-preview{right:18px;bottom:17px;width:38%}.map-hotspot{width:25px;height:25px}.numbers dl div{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.hero-copy,.hero-poster{animation:none}.poster-card{transition:none}}
