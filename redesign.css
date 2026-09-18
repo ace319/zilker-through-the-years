@@ -52,7 +52,7 @@
 .map-hotspot{position:absolute;width:30px;height:30px;padding:0;border:3px solid var(--cream);border-radius:50%;color:var(--cream);background:var(--red);box-shadow:0 2px 7px #0008;cursor:pointer;transform:translate(-50%,-50%)}
 .map-hotspot::after{font:700 .65rem var(--sans);content:"♪"}
 .map-hotspot:is(:hover,:focus-visible,.active){z-index:3;background:var(--ink);outline:3px solid var(--yellow);transform:translate(-50%,-50%) scale(1.22)}
-.map-preview{position:absolute;right:26px;bottom:24px;width:min(230px,28%);margin:0;padding:7px;background:var(--cream);box-shadow:7px 7px var(--pink);pointer-events:none}
+.map-preview{position:absolute;right:20px;bottom:18px;width:min(160px,20%);margin:0;padding:5px;background:var(--cream);box-shadow:5px 5px var(--pink);pointer-events:none}
 .map-preview img{width:100%;aspect-ratio:16/10;object-fit:cover}
 .map-preview figcaption{padding:6px 2px 1px;border:0;font-size:.52rem}
 .photo-grid img{height:auto;aspect-ratio:16/10;object-fit:cover}
@@ -60,5 +60,5 @@
 .numbers dl div{grid-template-columns:minmax(210px,auto) 1fr}
 
 @media(max-width:850px){.map,.schedule-layout,.nights{grid-template-columns:1fr}.schedule-controls{position:static}.nights-note{grid-column:1}.history-timeline{margin-top:55px;padding-left:70px}.history-timeline article{grid-template-columns:115px 1fr}.history-timeline::before{left:25px}.history-timeline article::before{left:-53px}}
-@media(max-width:620px){.hero-actions{align-items:stretch;flex-direction:column}.button{text-align:center}.schedule,.nights{padding:70px 24px}.weekend-tabs,.night-grid{grid-template-columns:1fr}.history-timeline{padding-left:38px}.history-timeline::before{left:8px}.history-timeline article{padding-bottom:50px;grid-template-columns:1fr;gap:10px}.history-timeline article::before{left:-38px}.history-timeline .history-now{margin-left:-10px;padding:24px}.history-timeline .history-now::before{left:-27px}.map-preview{right:18px;bottom:17px;width:38%}.map-hotspot{width:25px;height:25px}.numbers dl div{grid-template-columns:1fr}}
+@media(max-width:620px){.hero-actions{align-items:stretch;flex-direction:column}.button{text-align:center}.schedule,.nights{padding:70px 24px}.weekend-tabs,.night-grid{grid-template-columns:1fr}.history-timeline{padding-left:38px}.history-timeline::before{left:8px}.history-timeline article{padding-bottom:50px;grid-template-columns:1fr;gap:10px}.history-timeline article::before{left:-38px}.history-timeline .history-now{margin-left:-10px;padding:24px}.history-timeline .history-now::before{left:-27px}.map-preview{right:15px;bottom:14px;width:27%}.map-hotspot{width:25px;height:25px}.numbers dl div{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.hero-copy,.hero-poster{animation:none}.poster-card{transition:none}}
