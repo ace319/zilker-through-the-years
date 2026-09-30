@@ -10,7 +10,7 @@ menu?.addEventListener('click',()=>{
 
 const stagePhotos={
   'T-Mobile':'stage-t-mobile.jpg',"Tito's":'stage-titos.jpg','Miller Lite':'stage-miller-lite.jpg',
-  'Lady Bird':'stage-lady-bird.jpg','BMI':'stage-bmi.jpg','Austin Kiddie Limits':'stage-austin-kiddie-limits.jpg',
+  'BMI':'stage-bmi.jpg','Austin Kiddie Limits':'stage-austin-kiddie-limits.jpg',
   'BeatBox':'stage-beatbox.jpg','Bonus Tracks':'stage-bonus-tracks.jpg'
 };
 document.querySelectorAll('.stage-grid article').forEach(card=>{

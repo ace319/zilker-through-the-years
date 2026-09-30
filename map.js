@@ -1,13 +1,13 @@
 const stageMapData=[
-  {name:'T-Mobile',file:'stage-t-mobile.jpg',x:31,y:40},
+  {name:'T-Mobile',file:'stage-t-mobile.jpg',x:32,y:36},
   {name:'Miller Lite',file:'stage-miller-lite.jpg',x:48,y:19},
-  {name:"Tito's",file:'stage-titos.jpg',x:77,y:34},
-  {name:'American Express',file:'stage-american-express.jpg',x:91,y:58},
-  {name:'Lady Bird',file:'stage-lady-bird.jpg',x:58,y:54},
-  {name:'BMI',file:'stage-bmi.jpg',x:43,y:65},
-  {name:'Austin Kiddie Limits',file:'stage-austin-kiddie-limits.jpg',x:70,y:73},
-  {name:'BeatBox',file:'stage-beatbox.jpg',x:42,y:86},
-  {name:'Bonus Tracks',file:'stage-bonus-tracks.jpg',x:65,y:78}
+  {name:"Tito's",file:'stage-titos.jpg',x:77,y:32},
+  {name:'American Express',file:'stage-american-express.jpg',x:91,y:47},
+  {name:'Snapchat',file:'stage-snapchat-placeholder.svg',x:61,y:56},
+  {name:'BMI',file:'stage-bmi.jpg',x:43,y:58},
+  {name:'Austin Kiddie Limits',file:'stage-austin-kiddie-limits.jpg',x:70,y:68},
+  {name:'BeatBox',file:'stage-beatbox.jpg',x:43,y:81},
+  {name:'Bonus Tracks',file:'stage-bonus-tracks.jpg',x:59,y:67}
 ];
 const hotspotLayer=document.querySelector('.map-hotspots');
 const mapPreview=document.querySelector('.map-preview');

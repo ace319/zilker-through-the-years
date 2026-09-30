@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Snapchat Stage photo coming soon</title>
+  <desc id="desc">A dark green placeholder for the new 2026 Snapchat Stage.</desc>
+  <rect width="800" height="500" fill="#12312d"/>
+  <circle cx="400" cy="205" r="112" fill="#f7c84b"/>
+  <path d="M400 120c-48 0-75 36-75 80 0 26-7 42-25 55 15 9 31 13 47 14 12 24 31 37 53 37s41-13 53-37c16-1 32-5 47-14-18-13-25-29-25-55 0-44-27-80-75-80z" fill="#fff8e8"/>
+  <text x="400" y="380" fill="#fff8e8" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">SNAPCHAT STAGE</text>
+  <text x="400" y="425" fill="#ef6b3b" font-family="Arial, sans-serif" font-size="23" text-anchor="middle">PHOTO COMING SOON</text>
+</svg>
