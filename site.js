@@ -1,6 +1,5 @@
 const menu=document.querySelector('#menu');
 const nav=document.querySelector('nav');
-const weatherScript=document.createElement('script');weatherScript.src='weather-alert.js';document.head.append(weatherScript);
 const legacyPages={history:'history.html',posters:'posters.html',schedule:'schedule.html',nights:'nights.html',map:'map.html',photos:'photos.html',stages:'stages.html'};
 const oldSection=location.hash.slice(1);
 if((location.pathname.endsWith('/')||location.pathname.endsWith('/index.html'))&&legacyPages[oldSection])location.replace(legacyPages[oldSection]);
