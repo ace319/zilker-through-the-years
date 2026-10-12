@@ -1,5 +1,5 @@
 .inner-page header{position:absolute}.inner-page main>section:first-child{padding-top:155px;min-height:calc(100vh - 120px)}
-.photos-page header,.photos-page #menu{color:var(--ink)}.photos-page .photos .section-head>p{color:#36534e}
+.photos-page header,.photos-page #menu,.history-page header,.history-page #menu{color:var(--ink)}.photos-page .photos .section-head>p{color:#36534e}
 .inner-page nav{gap:19px}.inner-page nav a[aria-current="page"]{padding-bottom:4px;border-bottom:2px solid var(--yellow)}
 .page-intro{padding:155px 7vw 70px;color:var(--cream);background:var(--ink)}
 .page-intro h1{margin:20px 0 25px;font:400 clamp(4rem,8vw,8rem)/.9 var(--display)}
