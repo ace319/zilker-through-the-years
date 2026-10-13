@@ -23,7 +23,7 @@ const notes={
 2023:["Kendrick Lamar, Foo Fighters, Mumford & Sons, ODESZA, Shania Twain, Niall Horan","Noah Kahan, The 1975, Maggie Rogers, Labrinth"],
 2024:["Dua Lipa, Tyler, the Creator, Chris Stapleton, blink-182, Sturgill Simpson","Chappell Roan, Teddy Swims, Benson Boone, Reneé Rapp, Carin León"],
 2025:["Hozier, Sabrina Carpenter, The Strokes, Doechii, The Killers, John Summit","Olivia Dean, ROLE MODEL, Mk.gee, Lola Young, Rilo Kiley"],
-2026:["Charli xcx, Skrillex, Kings of Leon, Turnstile, RÜFÜS DU SOL, Lorde","Geese, Lola Young, CMAT, Audrey Hobert, Blood Orange, Sienna Spiro"]};
+2026:["Charli xcx, Skrillex, Kings of Leon, Turnstile, RÜFÜS DU SOL, Lorde, Bleachers","Geese, Lola Young, CMAT, Audrey Hobert, Blood Orange, Sienna Spiro"]};
 const years=Array.from({length:25},(_,i)=>2002+i),track=document.querySelector('#posterTrack'),caption=document.querySelector('#posterCaption'),details=document.querySelector('#lineupDetails');let selected=years.length-1;
 function asset(y){if(y===2020)return null;const ext=y===2007?'gif':y===2024?'png':y===2026?'webp':'jpg';return `images/acl/acl-${y}-lineup.${ext}`}
 years.forEach((y,i)=>{const b=document.createElement('button');b.className='poster-card';b.dataset.index=i;b.setAttribute('aria-label',y===2020?'Show 2020 cancellation details':`Show ${y} lineup; click again to open the full poster`);b.title=y===2020?'2020 festival cancellation':`${y}: center this poster, then click to view it full size`;b.innerHTML=y===2020?'<span class="cancel">2020<br><small>Canceled</small></span>':`<img src="${asset(y)}" alt="ACL Festival ${y} lineup poster" loading="lazy">`;track.append(b)});
