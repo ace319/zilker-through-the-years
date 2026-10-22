@@ -5,6 +5,7 @@
 .page-intro h1{margin:20px 0 25px;font:400 clamp(4rem,8vw,8rem)/.9 var(--display)}
 .page-intro p:last-child{max-width:650px;color:#b7c7c0;font-size:1.15rem}
 .site-directory{padding:100px 6vw;background:var(--cream)}
+.season-note{margin:30px 0 0;color:#c3d0ca;font:.7rem/1.8 var(--mono)}.season-note a{color:var(--yellow);text-underline-offset:4px}.season-note a:focus-visible{outline:2px solid var(--yellow);outline-offset:4px}
 .home-gallery{padding:100px 6vw;color:var(--cream);background:var(--red)}
 .home-gallery-head{display:grid;margin-bottom:42px;grid-template-columns:.55fr 1.15fr auto;gap:5vw;align-items:end}.home-gallery-head h2{margin:0;font-size:clamp(3.5rem,6vw,6.5rem)}.home-gallery-head>a{padding-bottom:5px;font:.6rem var(--mono);text-transform:uppercase}
 .home-photo-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:repeat(2,minmax(230px,27vw));gap:18px}
